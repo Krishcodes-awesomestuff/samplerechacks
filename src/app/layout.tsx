@@ -16,7 +16,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/samplerechacks/globals.css" />
+      </head>
+      <body className={`${inter.className} antialiased`}>
+        <main className="min-h-screen bg-black">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
