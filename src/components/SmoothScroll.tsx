@@ -10,8 +10,8 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical', // Changed from direction to orientation
-      smooth: true,
+      orientation: 'vertical',
+      smoothWheel: true,  // Change 'smooth' to 'smoothWheel'
     })
 
     gsap.registerPlugin(ScrollTrigger)

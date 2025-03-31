@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import SmoothScroll from '@/components/SmoothScroll'
 import Navigation from '@/components/Navigation'
 import Link from 'next/link'
